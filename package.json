@@ -1,16 +1,21 @@
 {
   "name": "react-rain-demo",
+  "homepage": "https://willnickerson.github.io/react-rain-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.6.1",
+    "react-canvas-knob": "^0.4.0",
     "react-dom": "^15.6.1",
-    "react-rain-animation": "^1.0.0"
+    "react-rain-animation": "^1.0.1"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
